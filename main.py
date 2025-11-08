@@ -1,13 +1,12 @@
 import sys
 
+from stats import get_num_words, get_char_vals, sort_on
 
 def get_book_text(path_to_file):
     with open(path_to_file) as f:
         path_string = f.read()
         return path_string
     
-from stats import get_num_words, get_char_vals, sort_on
-
 def main():
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
