@@ -6,11 +6,7 @@ def get_book_text(path_to_file):
         path_string = f.read()
         return path_string
     
-from stats import get_num_words
-
-from stats import get_char_vals
-
-from stats import sort_on
+from stats import get_num_words, get_char_vals, sort_on
 
 def main():
     if len(sys.argv) != 2:
